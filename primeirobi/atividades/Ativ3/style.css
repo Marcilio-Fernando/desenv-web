@@ -1,0 +1,132 @@
+body {
+  background-color: #3b4252;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Janela expansiva: ocupa 90% da tela até 720px no desktop */
+.janela-app {
+  width: 90%;
+  max-width: 720px;
+  min-height: 480px;
+  border: 2px solid #2e3440;
+  border-radius: 6px;
+  background-color: #fffde7;
+  box-shadow: 4px 4px 0px #1e222b;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Barra superior com as bolinhas */
+.barra-janela {
+  background-color: #d8dee9;
+  border-bottom: 2px solid #2e3440;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+}
+
+.botoes-janela {
+  display: flex;
+  gap: 6px;
+}
+
+.botoes-janela span {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid #777;
+  display: inline-block;
+}
+
+.botao-fechar {
+  background-color: #ff5f56;
+}
+
+.botao-minimizar {
+  background-color: #ffbd2e;
+}
+
+.botao-expandir {
+  background-color: #27c93f;
+}
+
+.titulo-janela {
+  font-size: 13px;
+  color: #333;
+  font-weight: bold;
+  margin-left: 14px;
+}
+
+.conteudo-app {
+  padding: 20px;
+  flex: 1;
+}
+
+.input-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px 10px;
+  font-family: inherit;
+  font-size: 14px;
+  background-color: #ffffff;
+  border: 1px solid #999;
+  outline: none;
+}
+
+#btnAdicionar {
+  padding: 8px 16px;
+  font-family: inherit;
+  font-weight: bold;
+  background-color: #eceff4;
+  border: 1px solid #777;
+  cursor: pointer;
+}
+
+#btnAdicionar:hover {
+  background-color: #d8dee9;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Linhas com traço pontilhado */
+li {
+  padding: 8px 6px;
+  border-bottom: 1px dashed #b0bec5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.item-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+li.concluida span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.btn-remover {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0 4px;
+}
